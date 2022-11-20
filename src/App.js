@@ -15,7 +15,7 @@ export default function App() {
       .then(data => setContacts(data))
   }, [])
 
-  console.log(contacts)
+  
 
   return (
     <>
@@ -39,10 +39,10 @@ export default function App() {
           path="/"
           element={<ContactsList contacts={contacts} />}
           />
-          {/* <Route
+          <Route
           path="/view/:id"
-          element={<PersonProfile hireAPerson={hireAPerson} />}
-          /> */}
+          element={<ContactsView />}
+          />
         </Routes>
       </main>
     </>
