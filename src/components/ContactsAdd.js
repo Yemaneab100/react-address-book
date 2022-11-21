@@ -11,8 +11,6 @@ function ContactsAdd() {
   const [twitter, setTwitter] = useState('');
   const navigate = useNavigate();
   
-  const history = useHistory()
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const contact = {firstName, lastName, street, city, email, linkdIn, twitter}

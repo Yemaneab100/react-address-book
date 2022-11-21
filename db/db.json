@@ -2,16 +2,6 @@
   "contacts": [
     {
       "id": 7,
-      "firstName": "John",
-      "lastName": "Carmack",
-      "street": "10 Keen Street",
-      "city": "London",
-      "email": "awet@gmail.com",
-      "linkdIn": "lhgjda",
-      "twitter": "lhdjg"
-    },
-    {
-      "id": 7,
       "firstName": "Grace",
       "lastName": "Hopper",
       "street": "32 Deebug Road",
@@ -99,16 +89,6 @@
       "linkdIn": "ajhgda",
       "twitter": "ahlgja",
       "id": 10
-    },
-    {
-      "firstName": "Selam",
-      "lastName": "Haile",
-      "street": "dglhad",
-      "city": "aghd",
-      "email": "akgjhd@gmail.com",
-      "linkdIn": "aglhjd",
-      "twitter": "akjgda",
-      "id": 11
     }
   ]
 }

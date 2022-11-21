@@ -1,8 +1,17 @@
-import { useState } from "react"
 import { Link, useSearchParams } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 function ContactsList({contacts}) {
+  const navigate = useNavigate();
 
+  const hadleClick = (id) => {
+    fetch(`http://localhost:4000/contacts/${id}`, {
+      method: 'DELETE'
+    })
+    .then(() => {
+      navigate('/')
+    })
+  }
 
   return (
     <>
@@ -23,7 +32,9 @@ function ContactsList({contacts}) {
                 <Link to={`/view/${id}`} state = { { contact } }> View</Link>
                 <br />
                 <Link to={`/edit/${id}`} state = { { contact } }> Edit </Link>
-              </p>
+                <br />
+                <button style={{color: "red"}} onClick = {() => hadleClick(id)}> Delete </button>
+              </p> 
             </li>
           )
         })}
