@@ -12,6 +12,7 @@ function ContactsView() {
 
   useEffect(() => { 
     if(location.state){
+      
       setContact(location.state.contact)
     }
   }, [location])
