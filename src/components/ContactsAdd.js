@@ -1,19 +1,12 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 
-function ContactsAdd({ setContacts, contacts }) {
-
-  // setContacts and contacts must be passed as props
-  // to this component so new contacts can be added to the
-  // state
-
-
-  //TODO: Implement controlled form
-  //send POST to json server on form submit
+function ContactsAdd() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [street, setStreet] = useState('');
   const [city, setCity] = useState('')
+  const [newContact, setNewContact] = useState('');
   
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,7 +18,7 @@ function ContactsAdd({ setContacts, contacts }) {
       body: JSON.stringify(contact)
     })
     .then(() => {
-      console.log('New contact added');
+      setNewContact(`${firstName} ${lastName} is added to the store` )
     })
   }
 
@@ -77,12 +70,12 @@ function ContactsAdd({ setContacts, contacts }) {
         <button className="button blue" type="submit">
           Create
         </button>
-        <p>{firstName}</p>
-        <p>{lastName}</p>
-        <p>{street}</p>
-        <p>{city}</p>
+        
       </div>
+      <br />
+      <p>{newContact}</p>
     </form>
+   
   )
 }
 
