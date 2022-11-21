@@ -10,8 +10,7 @@ function ContactsView() {
 
   const location = useLocation();
 
-  useEffect(() => {
-    console.log('location state', location.state);
+  useEffect(() => { 
     if(location.state){
       setContact(location.state.contact)
     }

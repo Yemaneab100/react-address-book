@@ -13,6 +13,20 @@
       "lastName": "Hopper",
       "street": "32 Deebug Road",
       "city": "London"
+    },
+    {
+      "firstName": "Haile",
+      "lastName": "Harmaz",
+      "street": "Victoria Coache",
+      "city": "Leeds",
+      "id": 3
+    },
+    {
+      "firstName": "Solomon",
+      "lastName": "Mehari",
+      "street": "Finham",
+      "city": "London",
+      "id": 4
     }
   ]
 }
