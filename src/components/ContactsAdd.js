@@ -5,12 +5,15 @@ function ContactsAdd() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [street, setStreet] = useState('');
-  const [city, setCity] = useState('')
+  const [city, setCity] = useState('');
   const [newContact, setNewContact] = useState('');
+  const [email, setEmail] = useState('');
+  const [linkdIn, setLinkdIn] = useState('');
+  const [twitter, setTwitter] = useState('');
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    const contact = {firstName, lastName, street, city}
+    const contact = {firstName, lastName, street, city, email, linkdIn, twitter}
     
     fetch('http://localhost:4000/contacts', {
       method: 'post',
@@ -65,6 +68,36 @@ function ContactsAdd() {
         value={city}
         onChange = {(e) => setCity(e.target.value)}
         />
+      
+      <label htmlFor="email">Email:</label>
+      <input 
+        id="email" 
+        name="email" 
+        type="email" 
+        required
+        value={email}
+        onChange = {(e) => setEmail(e.target.value)}
+        />
+
+      <label htmlFor="linkdIn">LinkdIn:</label>
+      <input 
+        id="linkdIn" 
+        name="linkdIn" 
+        type="text" 
+        required
+        value={linkdIn}
+        onChange = {(e) => setLinkdIn(e.target.value)}
+        />
+
+      <label htmlFor="twitter">Twitter:</label>
+      <input 
+        id="twitter" 
+        name="twitter" 
+        type="text" 
+        required
+        value={twitter}
+        onChange = {(e) => setTwitter(e.target.value)}
+        /> 
 
       <div className="actions-section">
         <button className="button blue" type="submit">
@@ -74,6 +107,7 @@ function ContactsAdd() {
       </div>
       <br />
       <p>{newContact}</p>
+      
     </form>
    
   )
