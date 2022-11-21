@@ -6,11 +6,13 @@ function ContactsAdd() {
   const [lastName, setLastName] = useState('');
   const [street, setStreet] = useState('');
   const [city, setCity] = useState('');
-  const [newContact, setNewContact] = useState('');
   const [email, setEmail] = useState('');
   const [linkdIn, setLinkdIn] = useState('');
   const [twitter, setTwitter] = useState('');
+  const navigate = useNavigate();
   
+  const history = useHistory()
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const contact = {firstName, lastName, street, city, email, linkdIn, twitter}
@@ -22,6 +24,7 @@ function ContactsAdd() {
     })
     .then(() => {
       setNewContact(`${firstName} ${lastName} is added to the store` )
+      navigate('/')  
     })
   }
 
@@ -104,10 +107,7 @@ function ContactsAdd() {
           Create
         </button>
         
-      </div>
-      <br />
-      <p>{newContact}</p>
-      
+      </div>   
     </form>
    
   )

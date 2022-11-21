@@ -1,64 +1,54 @@
 {
   "contacts": [
     {
-      "id": 1,
+      "id": 7,
       "firstName": "John",
       "lastName": "Carmack",
       "street": "10 Keen Street",
       "city": "London",
       "email": "awet@gmail.com",
       "linkdIn": "lhgjda",
-      "twitter": "lhdjg",
-      "id": 7
-
+      "twitter": "lhdjg"
     },
     {
-      "id": 2,
+      "id": 7,
       "firstName": "Grace",
       "lastName": "Hopper",
       "street": "32 Deebug Road",
       "city": "London",
       "email": "awet@gmail.com",
       "linkdIn": "lhgjda",
-      "twitter": "lhdjg",
-      "id": 7
+      "twitter": "lhdjg"
     },
     {
       "firstName": "Haile",
       "lastName": "Harmaz",
       "street": "Victoria Coache",
       "city": "Leeds",
-      "id": 3,
+      "id": 7,
       "email": "awet@gmail.com",
       "linkdIn": "lhgjda",
-      "twitter": "lhdjg",
-      "id": 7
+      "twitter": "lhdjg"
     },
     {
       "firstName": "Solomon",
       "lastName": "Mehari",
       "street": "Finham",
       "city": "London",
-      "id": 4,
-      "email": "awet@gmail.com",
-      "linkdIn": "lhgjda",
-      "twitter": "lhdjg",
       "id": 7,
       "email": "awet@gmail.com",
       "linkdIn": "lhgjda",
-      "twitter": "lhdjg",
-      "id": 7
+      "twitter": "lhdjg"
     },
     {
       "firstName": "Awet",
       "lastName": "Hailu",
       "street": "Rober Street",
       "city": "Manchester",
-      "id": 5,
+      "id": 7,
       "email": "awet@gmail.com",
       "linkdIn": "lhgjda",
-      "twitter": "lhdjg",
-      "id": 7
+      "twitter": "lhdjg"
     },
     {
       "firstName": "Yemaneab",
@@ -79,6 +69,46 @@
       "linkdIn": "lhgjda",
       "twitter": "lhdjg",
       "id": 7
+    },
+    {
+      "firstName": "ahldd",
+      "lastName": "lghd",
+      "street": "glhd",
+      "city": "gldhg",
+      "email": "glhda@gmail.com",
+      "linkdIn": "alhgd",
+      "twitter": "alhgdjg",
+      "id": 8
+    },
+    {
+      "firstName": "ghldte",
+      "lastName": "gdklgja",
+      "street": "gdla",
+      "city": "gldaj",
+      "email": "alghd@gamil.com",
+      "linkdIn": "algdja",
+      "twitter": "ajgldja",
+      "id": 9
+    },
+    {
+      "firstName": "ahlgdj",
+      "lastName": "galkjdg",
+      "street": "agjda",
+      "city": "glda",
+      "email": "aglhd@gmail.com",
+      "linkdIn": "ajhgda",
+      "twitter": "ahlgja",
+      "id": 10
+    },
+    {
+      "firstName": "Selam",
+      "lastName": "Haile",
+      "street": "dglhad",
+      "city": "aghd",
+      "email": "akgjhd@gmail.com",
+      "linkdIn": "aglhjd",
+      "twitter": "akjgda",
+      "id": 11
     }
   ]
 }

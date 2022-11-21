@@ -21,6 +21,8 @@ function ContactsList({contacts}) {
               <p>
                 { /** TODO: Make a Link here to view contact */}
                 <Link to={`/view/${id}`} state = { { contact } }> View</Link>
+                <br />
+                <Link to={`/edit/${id}`} state = { { contact } }> Edit </Link>
               </p>
             </li>
           )
