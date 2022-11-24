@@ -21,7 +21,6 @@ function ContactsAdd() {
       body: JSON.stringify(contact)
     })
     .then(() => {
-      setNewContact(`${firstName} ${lastName} is added to the store` )
       navigate('/')  
     })
   }
